@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinterio</title>
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+
+        .navbar-bg {
+            background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+    </style>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/90b671d69f.js" crossorigin="anonymous"></script>
+    <!-- tailwind color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'btn-primary': 'rgb(171, 239, 95)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-manrope navbar-bg">
+    <header>
+        <!-- nav section -->
+        <section>
+            <nav>
+                <div class="navbar bg-transparent px-6 lg:px-12 py-4">
+                    <!-- Logo Section -->
+                    <div class="flex-none">
+                        <a href="#" class="flex items-center space-x-3">
+                            <i class="fa-solid fa-arrow-right -rotate-45 bg-btn-primary rounded-full p-3"></i>
+                            <span class="font-extrabold text-xl">Rinterio</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Centered Menu Section -->
+                    <div class="flex-1 flex justify-center">
+                        <ul class="menu menu-horizontal space-x-8 hidden lg:flex">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Right Side Icons and Buttons -->
+                    <div class="flex-none flex items-center space-x-6">
+                        <button class="rounded-full p-2 hidden sm:block hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300">
+                            <i class="fa-solid fa-magnifying-glass text-gray-500"></i>
+                        </button>
+                        <button class="rounded-full p-2 hidden sm:block hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300">
+                            <i class="fa-solid fa-cart-shopping text-gray-500"></i>
+                        </button>                        
+                        <button
+                            class="bg-btn-primary text-black rounded-full py-3 px-5 flex items-center space-x-2 hidden sm:flex">
+                            <span class="font-extrabold">Book Consult</span>
+                            <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white rounded-full p-2"></i>
+                        </button>
+                        <div class="dropdown dropdown-end lg:hidden">
+                            <div tabindex="0" role="button" class="btn bg-gray-200 rounded-full p-4 hover:bg-gray-300">
+                                <i class="fa-solid fa-bars" style="color: #898c90;"></i>
+                            </div>
+                            <ul tabindex="0"
+                                class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                                <li><a href="#" class="text-sm text-gray-700 hover:bg-gray-100">Home</a></li>
+                                <li><a href="#" class="text-sm text-gray-700 hover:bg-gray-100">Services</a></li>
+                                <li><a href="#" class="text-sm text-gray-700 hover:bg-gray-100">Portfolio</a></li>
+                                <li><a href="#" class="text-sm text-gray-700 hover:bg-gray-100">Blogs</a></li>
+                                <li><a href="#" class="text-sm text-gray-700 hover:bg-gray-100">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <main>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>
